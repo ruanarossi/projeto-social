@@ -33,3 +33,30 @@ section#telefone {
     width: 311px;
     background: url(../imagens/frame-iphone.png);
 }
+
+iframe#tela { /*posicionando a ft na tela(iframe) do telefone*/
+    position: relative;
+    top: 80px;
+    left: 22px;
+    width: 269px;
+    height: 471px;
+}
+
+section#redes-sociais img {
+    width: 50px;
+    margin: 10px;
+    border-radius: 50%; /*deixar os botoes redondos*/
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.404); /*sombra*/
+    box-sizing: border-box; /*incluir a largura da borda na largura total do elemento*/
+}
+
+section#redes-sociais {
+    text-align: right;
+}
+
+section#redes-sociais img:hover {
+    border: 2px solid rgba(255, 255, 255, 0.637);
+    transform: translate(-3px, -3px); /*movimento do botao quando passa o mouse*/
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.637);
+    transition: transform .3s, border 1s;
+}
